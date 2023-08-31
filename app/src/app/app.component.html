@@ -1,0 +1,13 @@
+<mat-toolbar>
+  <h3>{{ " {" + " space hub NASA API's " + "}" }}</h3>
+  <button mat-button [matMenuTriggerFor]="menu">Tools</button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="navigateTo('/neosw')">NEOSW</button>
+    <button mat-menu-item (click)="navigateTo('/apod')">APOD</button>
+  </mat-menu>
+</mat-toolbar>
+<div class="content-container">
+  <main class="content-area">
+    <router-outlet></router-outlet>
+  </main>
+</div>

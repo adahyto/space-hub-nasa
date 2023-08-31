@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+h1,
+h2,
+h3 {
+    // font-family: 'Comfortaa', cursive;
+    // font-family: 'Exo', sans-serif;
+    // font-family: 'Rajdhani', sans-serif;
+    font-family: 'Turret Road', cursive;
+    // font-family: 'Montserrat', sans-serif;
+}
+
+p,
+input,
+span,
+button,
+.mat-menu-item {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+.flex-container-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
