@@ -19,20 +19,6 @@ const routes: Routes = [
         path: 'neosw',
         loadChildren: () =>
           import('./modules/neosw/neosw.module').then(m => m.NeoswModule)
-      },
-      {
-        path: 'insight-weather',
-        loadChildren: () =>
-          import('./modules/insight-weather/insight-weather.module').then(
-            m => m.InsightWeatherModule
-          )
-      },
-      {
-        path: 'curiosity',
-        loadChildren: () =>
-          import('./modules/curiosity/curiosity.module').then(
-            m => m.CuriosityModule
-          )
       }
     ]
   }
@@ -42,4 +28,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

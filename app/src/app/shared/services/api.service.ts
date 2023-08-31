@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ApiService {
-  constructor(private httpClient: HttpClient) {}
+  constructor(private httpClient: HttpClient) { }
 
   get(url: string, baseUrl = apiURL) {
     return this.httpClient.get<any>(`${baseUrl}/${url}`);
@@ -22,11 +22,11 @@ export class ApiService {
     return this.get(`planetary/apod?api_key=${key}`);
   }
 
-  public getInsightWeather() {
-    return this.get(`insight_weather/?api_key=${key}&feedtype=json&ver=1.0`);
-  }
+  // public getInsightWeather() {
+  //   return this.get(`insight_weather/?api_key=${key}&feedtype=json&ver=1.0`);
+  // }
 
-  public getCuriosityPics() {
-    return this.get(`mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=${key}`);
-  }
+  // public getCuriosityPics() {
+  //   return this.get(`mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=${key}`);
+  // }
 }
